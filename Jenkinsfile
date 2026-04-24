@@ -126,17 +126,6 @@ pipeline {
                 always {
                     // Muestra los resultados de JUnit en el dashboard
                     junit "${REPORTS_DIR}/test_results.xml"
-
-                    // Publica el reporte HTML de cobertura
-                    publishHTML([
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: true,
-                        keepAll: true,
-                        reportDir: "${REPORTS_DIR}/coverage_html",
-                        reportFiles: "index.html",
-                        reportName: "Reporte de Cobertura",
-                        reportTitles: "Cobertura de Código"
-                    ])
                 }
             }
         }

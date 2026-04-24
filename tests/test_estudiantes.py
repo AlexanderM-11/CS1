@@ -14,10 +14,10 @@ from src.estudiantes import Estudiante, RegistroEstudiantes
 class TestEstudiante:
 
     def test_creacion_correcta(self):
-        e = Estudiante("2021001", "Ana García", "ana@iumfs.edu.co")
+        e = Estudiante("2021001", "Ana García", "ana@iumafis.edu.co")
         assert e.codigo == "2021001"
         assert e.nombre == "Ana García"
-        assert e.email == "ana@iumfs.edu.co"
+        assert e.email == "ana@iumafis.edu.co"
 
     def test_codigo_se_convierte_a_mayusculas(self):
         e = Estudiante("abc123", "Juan López", "juan@test.com")
